@@ -1,0 +1,6 @@
+{"nome": "doc-revelar", "origem": "ai-motion-library, versão documental (Douglas Januário, MIT): 'Palavra por palavra / word reveal' sincronizado com a fala (0,08-0,15 s por palavra) + 'Surgir / fade in' ease-out", "licenca": "MIT",
+ "aparencia": "Sóbrio: cada palavra aparece em fade curto no exato momento em que é dita; frase de até 6 palavras, sem caixa.",
+ "paleta_padrao": "verde-bege", "fonte": "Inter SemiBold", "tamanho": 62, "contorno": 1.5,
+ "sombras": [{"dx": 2, "dy": 3, "opacidade": 0.6, "blur": 4}],
+ "agrupamento": {"regra": "palavras", "max_palavras": 6, "max_seg": 3.2, "pausa_quebra": 0.45},
+ "destaque": {"tipo": "revelar", "dur_palavra": 0.12}}

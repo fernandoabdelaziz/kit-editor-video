@@ -1,0 +1,375 @@
+{
+ "_leia": "Catálogo da biblioteca de aberturas, gráficos animados e fechamentos. Implementação: kitlib/motion_graficos.py. Lido por kit.py presets / biblioteca / efeitos.",
+ "_regras": [
+  "tom sóbrio: sem bounce/elastic/pop; no máximo 2 efeitos por elemento; saída ~70% da entrada; cascata na ordem de leitura",
+  "nada sobre o apresentador: gráficos grandes = recorte em tela cheia (fundo neutro, voz continua, corte seco); pequenos só em espaço livre",
+  "tom sóbrio (e regras de publicidade da profissão, se houver): sem promessa de resultado nem apelo comercial; texto só da fala; dados e números só os que ele fala"
+ ],
+ "opcoes": [
+  {
+   "id": "palavra-revelada",
+   "grupo": "abertura",
+   "pt": "Palavra-chave revelada",
+   "en": "Keyword reveal",
+   "serve": "Abre o vídeo com o termo central (tributo, sigla, tema) em destaque.",
+   "quando": "Nos 3 a 4 primeiros segundos, na hora em que ele diz a palavra. Uma palavra ou expressão curta.",
+   "duracao": "2,2 a 3 s no total: cartão 0,5 s; letras 0,55 s cada, 45 ms entre letras; régua 0,55 s; saída 0,35 s",
+   "easing": "power3.out nas letras (sem passar do alvo); power2.inOut na régua",
+   "comportamento": "Cartão da paleta pequeno no terço superior (espaço livre). Cada letra sobe por trás de uma linha de máscara, da esquerda para a direita, e uma régua fina se desenha embaixo. Linha de apoio opcional acima.",
+   "parametros": [
+    "texto",
+    "apoio",
+    "tamanho (120)",
+    "posicao",
+    "largura",
+    "recorte (false)",
+    "sincronizar"
+   ],
+   "momento": "Hook, 0 a 4 s.",
+   "recorte": false
+  },
+  {
+   "id": "numero-rolando",
+   "grupo": "abertura",
+   "pt": "Número em contagem",
+   "en": "Rolling counter",
+   "serve": "Abre com um número ou prazo (valor, dias, anos) que rola e assenta na palavra falada.",
+   "quando": "Hook com dado que ele cita. O número chega ao valor quando termina de dizê-lo.",
+   "duracao": "2,5 a 3,5 s: dígitos rolam 1,1 s (assentam da esquerda para a direita); rótulo 0,45 s",
+   "easing": "power3.out em cada coluna de dígitos (rolagem vertical de hodômetro); rótulo power2.out",
+   "comportamento": "Recorte em tela cheia com fundo neutro (padrão), número grande no centro da safe area, prefixo e sufixo menores (R$, %, dias). Com recorte:false vira cartão pequeno em espaço livre.",
+   "parametros": [
+    "valor",
+    "casas",
+    "prefixo",
+    "sufixo",
+    "rotulo",
+    "fala",
+    "contagem (1,1 s)",
+    "tamanho",
+    "recorte (true)"
+   ],
+   "momento": "Hook, 0 a 4 s, ou quando o número aparece na fala.",
+   "recorte": true
+  },
+  {
+   "id": "pergunta-resolve",
+   "grupo": "abertura",
+   "pt": "Pergunta que se resolve",
+   "en": "Question to answer",
+   "serve": "Abre com a dúvida do público e, na hora da resposta, troca o foco para ela.",
+   "quando": "Quando ele faz uma pergunta e responde em seguida. Resposta curta, sem promessa.",
+   "duracao": "3,5 a 5 s: palavras 0,35 s; pergunta esmaece 0,5 s; resposta sobe 0,6 s; régua 0,55 s",
+   "easing": "power2.out nas palavras; power2.inOut no esmaecer; power3.out na resposta",
+   "comportamento": "Cartão no terço superior. A pergunta entra palavra a palavra (no tempo da fala), depois cai para 38% e a resposta sobe por uma máscara, em destaque, com régua fina.",
+   "parametros": [
+    "pergunta",
+    "resposta",
+    "resolve_em (s)",
+    "tamanho (62)",
+    "posicao",
+    "recorte (false)",
+    "sincronizar"
+   ],
+   "momento": "Hook, 0 a 6 s.",
+   "recorte": false
+  },
+  {
+   "id": "titulo-reguas",
+   "grupo": "abertura",
+   "pt": "Título entre réguas",
+   "en": "Ruled title slot",
+   "serve": "Apresenta o tema do vídeo (ex.: nome do tema ou da decisão) com ar de capa editorial.",
+   "quando": "Logo no início, em vez de um título comum; até 2 linhas.",
+   "duracao": "3 a 4 s: réguas e janela 0,7 s; título 0,6 s; sobretítulo 0,4 s",
+   "easing": "power2.inOut nas réguas e na janela; power3.out no título",
+   "comportamento": "Duas réguas finas partem do centro, abrem uma janela de recorte e o título sobe dentro dela. Sobretítulo pequeno em caixa-alta acima (ex.: o tribunal).",
+   "parametros": [
+    "texto",
+    "linhas",
+    "sobretitulo",
+    "tamanho (84)",
+    "posicao",
+    "recorte (false)"
+   ],
+   "momento": "Hook, 0 a 4 s.",
+   "recorte": false
+  },
+  {
+   "id": "afirmacao-corrigida",
+   "grupo": "abertura",
+   "pt": "Afirmação riscada e corrigida",
+   "en": "Strike and correct",
+   "serve": "Desfaz uma ideia comum: mostra o que se acha, risca e põe o que é correto.",
+   "quando": "Quando ele diz 'muita gente pensa X, mas...'. As duas frases saem da fala dele; nada de promessa.",
+   "duracao": "3,5 a 5 s: frase 0,45 s; risco 0,5 s; correção sobe 0,6 s",
+   "easing": "power2.out na entrada; power2.inOut no risco e no esmaecer; power3.out na correção",
+   "comportamento": "Cartão no terço superior. A frase comum entra, uma linha a risca da esquerda para a direita enquanto ela cai para 45%, e a frase correta sobe por máscara em destaque.",
+   "parametros": [
+    "errada",
+    "certa",
+    "corrige_em (s)",
+    "tamanho (56)",
+    "posicao",
+    "recorte (false)",
+    "sincronizar"
+   ],
+   "momento": "Hook, 0 a 6 s.",
+   "recorte": false
+  },
+  {
+   "id": "barras-crescendo",
+   "grupo": "grafico",
+   "pt": "Barra crescendo",
+   "en": "Growing bars",
+   "serve": "Compara valores (alíquotas, prazos em dias, número de etapas) com barras horizontais.",
+   "quando": "Quando ele compara 2 a 5 valores que cita. Cada barra entra no momento em que o item é dito.",
+   "duracao": "3 a 6 s: cada barra 0,9 s, 0,7 s entre barras; item 0,4 s",
+   "easing": "power2.inOut no enchimento (como barra de progresso); power3.out na entrada do item",
+   "comportamento": "Recorte em tela cheia. Rótulo à esquerda e valor à direita, que conta junto; a barra enche da esquerda para a direita. Um item pode ficar em destaque (cor mais clara).",
+   "parametros": [
+    "itens[{rotulo,valor,texto_valor,fala}]",
+    "max",
+    "unidade",
+    "casas",
+    "destaque (índice)",
+    "titulo",
+    "intervalo",
+    "recorte (true)"
+   ],
+   "momento": "Meio do vídeo, na explicação.",
+   "recorte": true
+  },
+  {
+   "id": "linha-desenhando",
+   "grupo": "grafico",
+   "pt": "Linha se desenhando",
+   "en": "Line draw-on",
+   "serve": "Mostra uma evolução (alta, queda, tendência) sem inventar escala: só a forma e o valor final.",
+   "quando": "Quando ele descreve crescimento ou queda e cita o valor final. Sem números nos eixos.",
+   "duracao": "3,5 a 5 s: grade 0,4 s; linha 1,6 s; ponto 0,35 s; valor 0,45 s",
+   "easing": "power2.inOut no traço; power2.out nos demais",
+   "comportamento": "Recorte em tela cheia. Grade fina, depois a linha se desenha da esquerda para a direita, a área abaixo ganha um tom suave e o ponto final aparece com o valor falado. Rótulos do eixo x opcionais.",
+   "parametros": [
+    "pontos[3+]",
+    "rotulos_x",
+    "rotulo_final",
+    "fala",
+    "titulo",
+    "desenho (1,6 s)",
+    "altura",
+    "recorte (true)"
+   ],
+   "momento": "Meio do vídeo.",
+   "recorte": true
+  },
+  {
+   "id": "linha-do-tempo-prazos",
+   "grupo": "grafico",
+   "pt": "Linha do tempo de prazos",
+   "en": "Deadline timeline",
+   "serve": "Ordena prazos e marcos (data + descrição) na sequência em que ele os diz.",
+   "quando": "Quando cita 3 a 5 datas ou etapas em ordem. Um marco pode ser 'ativo' (anel).",
+   "duracao": "4 a 7 s: marco 0,45 s; linha desce 0,25 a 0,6 s entre marcos; anel 0,6 s",
+   "easing": "power2.inOut na linha e no anel; power3.out nos textos",
+   "comportamento": "Recorte em tela cheia. Linha vertical que desce; a cada marco, ponto, data à esquerda (destaque) e descrição à direita aparecem na ordem de leitura.",
+   "parametros": [
+    "marcos[{data,texto,ativo,fala}]",
+    "espaco (150)",
+    "titulo",
+    "recorte (true)"
+   ],
+   "momento": "Meio do vídeo.",
+   "recorte": true
+  },
+  {
+   "id": "antes-depois",
+   "grupo": "grafico",
+   "pt": "Comparação antes/depois",
+   "en": "Before-after",
+   "serve": "Contrasta duas regras, duas situações ou dois regimes (regra anterior x regra atual).",
+   "quando": "Quando ele compara dois cenários. NUNCA para prometer resultado (regras de publicidade profissional).",
+   "duracao": "4 a 7 s: painel 0,5 s; linhas 0,28 s entre elas; conector 0,4 s",
+   "easing": "power3.out nos painéis; power2.out nas linhas; power2.inOut no conector",
+   "comportamento": "Recorte em tela cheia. Painel 1 (borda neutra) entra com suas linhas; um conector se desenha para baixo e o painel 2 (borda de destaque) entra com as dele.",
+   "parametros": [
+    "antes{titulo,linhas,fala}",
+    "depois{titulo,linhas,fala}",
+    "recorte (true)"
+   ],
+   "momento": "Meio do vídeo.",
+   "recorte": true,
+   "cuidado": "Títulos padrão ANTES/DEPOIS; troque por 'Regra anterior'/'Regra atual' quando fizer sentido."
+  },
+  {
+   "id": "fluxo-etapas",
+   "grupo": "grafico",
+   "pt": "Fluxo em etapas com conectores",
+   "en": "Step flow",
+   "serve": "Explica um procedimento passo a passo (ex.: o caminho de um processo ou de um pedido).",
+   "quando": "Quando ele enumera 3 a 5 etapas. Cada cartão entra quando a etapa é dita.",
+   "duracao": "4 a 8 s: cartão 0,45 s; conector 0,45 s com um pulso que corre por ele",
+   "easing": "power3.out nos cartões; power2.inOut nos conectores e nos pulsos",
+   "comportamento": "Recorte em tela cheia. Cartões numerados em coluna; entre cada par, um conector se desenha para baixo e um ponto pequeno corre por ele até a próxima etapa.",
+   "parametros": [
+    "etapas[str|{texto,fala}]",
+    "conector (64 px)",
+    "titulo",
+    "recorte (true)"
+   ],
+   "momento": "Meio do vídeo.",
+   "recorte": true
+  },
+  {
+   "id": "contador-valor",
+   "grupo": "grafico",
+   "pt": "Contador de valor",
+   "en": "Value counter",
+   "serve": "Mostra a mudança de um valor (de X para Y), em R$, % ou dias, no formato brasileiro.",
+   "quando": "Quando ele diz 'passou de X para Y'. Valores só os que ele fala (use fala_de/fala_para).",
+   "duracao": "3,5 a 5 s: valor antigo 0,4 s; risco 0,4 s; contagem 1,1 s; rótulo 0,4 s",
+   "easing": "power2.out na contagem; power2.inOut no risco",
+   "comportamento": "Cartão pequeno no terço superior. O valor antigo aparece menor e é riscado; o número grande conta até o novo valor (R$ 1.234,56) e assenta, com rótulo embaixo.",
+   "parametros": [
+    "de",
+    "para",
+    "casas",
+    "prefixo",
+    "sufixo",
+    "rotulo",
+    "fala_de",
+    "fala_para",
+    "conta_em (s)",
+    "tamanho (120)",
+    "recorte (false)"
+   ],
+   "momento": "Meio do vídeo.",
+   "recorte": false
+  },
+  {
+   "id": "checklist-cascata",
+   "grupo": "grafico",
+   "pt": "Checklist em cascata",
+   "en": "Cascading checklist",
+   "serve": "Lista requisitos, documentos ou passos com um visto que se desenha em cada item.",
+   "quando": "Quando ele enumera 3 a 5 itens. Cada item entra no momento em que é dito.",
+   "duracao": "4 a 7 s: item 0,4 s; anel 0,4 s; visto 0,3 s; 0,3 s ou mais entre itens",
+   "easing": "power3.out na entrada; power2.inOut no anel; power2.out no visto",
+   "comportamento": "Recorte em tela cheia. A cada item: o texto sobe, um anel se desenha ao redor e o visto se traça por dentro, na ordem de leitura.",
+   "parametros": [
+    "itens[str|{texto,fala}]",
+    "tamanho (46)",
+    "titulo",
+    "recorte (true)"
+   ],
+   "momento": "Meio do vídeo.",
+   "recorte": true
+  },
+  {
+   "id": "destaque-de-lei",
+   "grupo": "grafico",
+   "pt": "Destaque de trecho de lei",
+   "en": "Statute highlight",
+   "serve": "Mostra o texto do dispositivo e grifa o trecho que ele está comentando.",
+   "quando": "Quando ele lê ou cita a lei. O texto precisa ser exatamente o que ele fala.",
+   "duracao": "5 a 8 s: papel 0,55 s; linhas 0,14 s entre elas; marca-texto 0,55 s; resto esmaece em 0,45 s",
+   "easing": "power3.out no papel; power2.out nas linhas; power2.inOut no marca-texto e no esmaecer",
+   "comportamento": "Recorte em tela cheia com cartão de papel claro e cabeçalho de identificação. As linhas entram em cascata; o marca-texto cresce sobre o trecho citado e as outras linhas caem para 38%.",
+   "parametros": [
+    "linhas[]",
+    "destaque (frase inteira dentro de uma linha)",
+    "cabecalho",
+    "fala",
+    "largura",
+    "tamanho (46)",
+    "destaca_em (s)",
+    "recorte (true)"
+   ],
+   "momento": "Meio do vídeo.",
+   "recorte": true
+  },
+  {
+   "id": "anel-percentual",
+   "grupo": "grafico",
+   "pt": "Anel de proporção",
+   "en": "Ring gauge",
+   "serve": "Mostra uma proporção ou percentual (alíquota, fração) como um anel que se completa.",
+   "quando": "Quando ele cita um percentual. O anel e o número chegam ao valor no fim da palavra falada.",
+   "duracao": "3 a 4,5 s: anel e número 1,4 s; rótulo 0,45 s",
+   "easing": "power2.inOut no anel e na contagem",
+   "comportamento": "Recorte em tela cheia. O anel se completa no sentido horário a partir das 12h enquanto o número conta no centro; rótulo embaixo.",
+   "parametros": [
+    "valor",
+    "max (100)",
+    "casas",
+    "unidade (%)",
+    "rotulo",
+    "fala",
+    "contagem (1,4 s)",
+    "diametro (480)",
+    "recorte (true)"
+   ],
+   "momento": "Meio do vídeo.",
+   "recorte": true
+  },
+  {
+   "id": "fecho-frase-regua",
+   "grupo": "fechamento",
+   "pt": "Fechamento com régua",
+   "en": "Rule sign-off",
+   "serve": "Encerra com uma frase neutra, pequena, sobre uma régua fina.",
+   "quando": "Nos últimos 2 a 3 s. Só 'Vale guardar esse vídeo' ou 'Fica de olho nisso' (ou texto aprovado por ele).",
+   "duracao": "2,5 a 3 s: régua 0,55 s; frase 0,5 s; saída 0,35 s",
+   "easing": "power2.inOut na régua; power3.out na frase",
+   "comportamento": "Cartão pequeno em espaço livre (topo). A régua se desenha do centro e a frase surge embaixo.",
+   "parametros": [
+    "texto (lista neutra)",
+    "texto_aprovado",
+    "tamanho (52)",
+    "posicao",
+    "recorte (false)"
+   ],
+   "momento": "Fecho, últimos 3 s.",
+   "recorte": false
+  },
+  {
+   "id": "fecho-ficha-tema",
+   "grupo": "fechamento",
+   "pt": "Fechamento com ficha de referência",
+   "en": "Reference tag",
+   "serve": "Deixa uma ficha com o tema e o tribunal (ex.: Tribunal | Caso 0000) para o espectador guardar.",
+   "quando": "Nos últimos 3 s, quando ele repete o tema. O texto sai da fala.",
+   "duracao": "2,5 a 3 s: parte 1 0,45 s; divisor 0,4 s; parte 2 0,55 s; saída 0,35 s",
+   "easing": "power3.out nas partes; power2.inOut no divisor",
+   "comportamento": "Ficha pequena de duas partes em espaço livre: a primeira entra, um divisor desce e a segunda se revela da esquerda para a direita por máscara.",
+   "parametros": [
+    "partes[2+]",
+    "fala",
+    "tamanho (46)",
+    "posicao",
+    "largura",
+    "recorte (false)"
+   ],
+   "momento": "Fecho, últimos 3 s.",
+   "recorte": false
+  },
+  {
+   "id": "fecho-tela-limpa",
+   "grupo": "fechamento",
+   "pt": "Fechamento em tela limpa",
+   "en": "Quiet end card",
+   "serve": "Último quadro discreto: fundo neutro, uma frase neutra e uma régua.",
+   "quando": "Só no fim, quando a fala já acabou ou está acabando. Frase da lista neutra.",
+   "duracao": "2,5 a 3,5 s: frase 0,6 s; régua 0,6 s; push-in lento de 1,03x",
+   "easing": "power3.out na frase; power2.inOut na régua; sine.inOut no push-in",
+   "comportamento": "Recorte em tela cheia, corte seco de ida. Frase centrada e uma régua fina se desenha embaixo, com a câmera chegando devagar.",
+   "parametros": [
+    "texto (lista neutra)",
+    "texto_aprovado",
+    "tamanho (76)"
+   ],
+   "momento": "Fecho, último 3 s.",
+   "recorte": true
+  }
+ ]
+}

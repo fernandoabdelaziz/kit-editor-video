@@ -1,0 +1,6 @@
+{"nome": "ffs-palavra-ativa", "origem": "ffmpeg-skill (kajisho5, MIT): caption.py --karaoke --karaoke-style word (ativa 112%, passadas brancas, futuras B4B4B4)", "licenca": "MIT",
+ "aparencia": "Palavra falada amarela e 12% maior; já ditas em branco, as que vêm em cinza.",
+ "paleta_padrao": "amarelo-tiktok", "fonte": "Inter Bold", "tamanho": 72, "contorno": 4,
+ "agrupamento": {"regra": "palavras", "max_palavras": 4, "max_seg": 2.6, "pausa_quebra": 0.5},
+ "cores": {"texto": "@texto", "ativo": "@destaque", "passado": "@texto", "futuro": "@futuro"},
+ "destaque": {"tipo": "cor", "escala": 112}}

@@ -1,0 +1,7 @@
+{"nome": "ffs-varredura", "origem": "ffmpeg-skill (kajisho5, MIT): caption.py --karaoke (sweep \\kf) + --animate pop, template reels", "licenca": "MIT",
+ "aparencia": "Frase inteira em branco; a cor amarela varre palavra por palavra (karaokê clássico); a frase entra com um 'pop' de escala.",
+ "paleta_padrao": "amarelo-tiktok", "fonte": "Inter Bold", "tamanho": 72, "contorno": 4,
+ "sombras": [],
+ "agrupamento": {"regra": "palavras", "max_palavras": 5, "max_seg": 3.0, "pausa_quebra": 0.5},
+ "destaque": {"tipo": "sweep", "cor": "@destaque"},
+ "entrada": {"tipo": "pop", "dur": 0.2}}

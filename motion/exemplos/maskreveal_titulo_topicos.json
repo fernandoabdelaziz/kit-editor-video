@@ -1,0 +1,10 @@
+{
+ "formato": "reels",
+ "paleta": "verde-bege",
+ "edl": "trabalho/TEMA/edl_aprovada.json",
+ "efeitos": [
+  {"efeito": "mask-reveal", "texto": "A regra mudou este mês.", "sincronizar": true, "inicio": 4.2, "entrada": 0.4},
+  {"efeito": "titulo-cinetico", "texto": "o que muda para você", "sincronizar": true, "posicao": "terco-superior"},
+  {"efeito": "stagger-topicos", "itens": ["quem precisa fazer", "até quando", "e o que acontece se não fizer"], "sincronizar": true}
+ ]
+}

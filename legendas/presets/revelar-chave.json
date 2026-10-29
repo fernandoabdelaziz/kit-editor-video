@@ -1,0 +1,57 @@
+{
+ "nome": "revelar-chave",
+ "origem": "próprio do kit: estilo comum em reels (palavra a palavra, branco em negrito, palavra-chave destacada) sobre o motor do doc-revelar (ai-motion-library, Douglas Januário, MIT)",
+ "licenca": "própria (mecânica de revelar derivada de MIT, ver NOTICE)",
+ "aparencia": "Sóbrio: palavras brancas em negrito aparecendo no momento em que são ditas (até 4 por vez); a palavra-chave (número, sigla, termo técnico) ganha caixa arredondada na cor da paleta (caixa/texto_caixa), que surge junto com ela; sem caixa no resto.",
+ "paleta_padrao": "verde-bege",
+ "fonte": "Inter Bold",
+ "tamanho": 66,
+ "contorno": 1.5,
+ "sombras": [
+  {
+   "dx": 0,
+   "dy": 3,
+   "opacidade": 0.7,
+   "blur": 6
+  }
+ ],
+ "posicao": {
+  "y": 0.8,
+  "y_paisagem": 0.87
+ },
+ "cores": {
+  "texto": "#FFFFFF"
+ },
+ "agrupamento": {
+  "regra": "palavras",
+  "max_palavras": 4,
+  "max_seg": 2.0,
+  "pausa_quebra": 0.35,
+  "chave_sozinha": false,
+  "min_dur": 0.5
+ },
+ "destaque": {
+  "tipo": "revelar",
+  "dur_palavra": 0.1
+ },
+ "entrada": {
+  "tipo": "fade",
+  "dur": 0.08
+ },
+ "chave": {
+  "cor": "@texto_caixa",
+  "escala": 100,
+  "auto": true,
+  "lista": [],
+  "excluir": [],
+  "caixa": {
+   "cor": "@caixa",
+   "pad": [
+    12,
+    5
+   ],
+   "raio": 10,
+   "opacidade": 1.0
+  }
+ }
+}

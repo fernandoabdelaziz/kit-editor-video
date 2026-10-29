@@ -1,0 +1,6 @@
+{
+  "name": "hyperframes-run",
+  "private": true,
+  "description": "Instalação local e isolada do HyperFrames CLI para o kit-editor (versão fixa; instalar com npm ci --ignore-scripts)",
+  "dependencies": { "hyperframes": "0.8.185" }
+}

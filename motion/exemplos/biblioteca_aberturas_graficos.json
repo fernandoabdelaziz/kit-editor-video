@@ -1,0 +1,250 @@
+{
+ "formato": "reels",
+ "paleta": "verde-bege",
+ "duracao": 83.2,
+ "efeitos": [
+  {
+   "efeito": "palavra-revelada",
+   "texto": "Palavra-chave",
+   "apoio": "EXEMPLO",
+   "exemplo": true,
+   "texto_aprovado": "mostruário: texto de exemplo fictício, sem rosto",
+   "inicio": 0.15,
+   "duracao": 3.3
+  },
+  {
+   "efeito": "numero-rolando",
+   "valor": 12345,
+   "prefixo": "R$",
+   "rotulo": "EXEMPLO · valor fictício",
+   "exemplo": true,
+   "texto_aprovado": "mostruário: texto de exemplo fictício, sem rosto",
+   "inicio": 3.75,
+   "duracao": 3.6
+  },
+  {
+   "efeito": "pergunta-resolve",
+   "pergunta": "EXEMPLO: pergunta do público?",
+   "resposta": "EXEMPLO: resposta curta",
+   "resolve_em": 2.0,
+   "exemplo": true,
+   "texto_aprovado": "mostruário: texto de exemplo fictício, sem rosto",
+   "inicio": 7.65,
+   "duracao": 4.8
+  },
+  {
+   "efeito": "titulo-reguas",
+   "sobretitulo": "EXEMPLO · tribunal",
+   "linhas": [
+    "Título do tema",
+    "vem aqui"
+   ],
+   "texto": "Título do tema vem aqui",
+   "exemplo": true,
+   "texto_aprovado": "mostruário: texto de exemplo fictício, sem rosto",
+   "inicio": 12.75,
+   "duracao": 3.6
+  },
+  {
+   "efeito": "afirmacao-corrigida",
+   "errada": "EXEMPLO: o que muita gente acha",
+   "certa": "EXEMPLO: o que é correto",
+   "corrige_em": 2.0,
+   "exemplo": true,
+   "texto_aprovado": "mostruário: texto de exemplo fictício, sem rosto",
+   "inicio": 16.65,
+   "duracao": 4.8
+  },
+  {
+   "efeito": "barras-crescendo",
+   "titulo": "Exemplo de comparação",
+   "itens": [
+    {
+     "rotulo": "Item A",
+     "valor": 80
+    },
+    {
+     "rotulo": "Item B",
+     "valor": 55
+    },
+    {
+     "rotulo": "Item C",
+     "valor": 30
+    }
+   ],
+   "unidade": "%",
+   "destaque": 0,
+   "exemplo": true,
+   "texto_aprovado": "mostruário: texto de exemplo fictício, sem rosto",
+   "inicio": 21.75,
+   "duracao": 4.8
+  },
+  {
+   "efeito": "linha-desenhando",
+   "titulo": "Exemplo de evolução",
+   "pontos": [
+    20,
+    28,
+    26,
+    40,
+    52,
+    48,
+    70
+   ],
+   "rotulos_x": [
+    "Início",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "Fim"
+   ],
+   "rotulo_final": "EXEMPLO",
+   "exemplo": true,
+   "texto_aprovado": "mostruário: texto de exemplo fictício, sem rosto",
+   "inicio": 26.85,
+   "duracao": 4.8
+  },
+  {
+   "efeito": "linha-do-tempo-prazos",
+   "titulo": "Exemplo de prazos",
+   "marcos": [
+    {
+     "data": "DD/MM",
+     "texto": "Marco de exemplo 1"
+    },
+    {
+     "data": "DD/MM",
+     "texto": "Marco de exemplo 2"
+    },
+    {
+     "data": "DD/MM",
+     "texto": "Marco ativo",
+     "ativo": true
+    },
+    {
+     "data": "DD/MM",
+     "texto": "Marco de exemplo 4"
+    }
+   ],
+   "intervalo": 0.85,
+   "exemplo": true,
+   "texto_aprovado": "mostruário: texto de exemplo fictício, sem rosto",
+   "inicio": 31.95,
+   "duracao": 6.2
+  },
+  {
+   "efeito": "antes-depois",
+   "antes": {
+    "titulo": "Regra anterior",
+    "linhas": [
+     "Texto de exemplo A1",
+     "Texto de exemplo A2"
+    ]
+   },
+   "depois": {
+    "titulo": "Regra atual",
+    "linhas": [
+     "Texto de exemplo B1",
+     "Texto de exemplo B2"
+    ]
+   },
+   "intervalo": 1.8,
+   "exemplo": true,
+   "texto_aprovado": "mostruário: texto de exemplo fictício, sem rosto",
+   "inicio": 38.45,
+   "duracao": 6.2
+  },
+  {
+   "efeito": "fluxo-etapas",
+   "titulo": "Exemplo de passos",
+   "etapas": [
+    "Etapa de exemplo 1",
+    "Etapa de exemplo 2",
+    "Etapa de exemplo 3",
+    "Etapa de exemplo 4"
+   ],
+   "intervalo": 1.0,
+   "exemplo": true,
+   "texto_aprovado": "mostruário: texto de exemplo fictício, sem rosto",
+   "inicio": 44.95,
+   "duracao": 6.2
+  },
+  {
+   "efeito": "contador-valor",
+   "de": 1500,
+   "para": 4200,
+   "casas": 2,
+   "prefixo": "R$ ",
+   "rotulo": "EXEMPLO · valor fictício",
+   "conta_em": 1.2,
+   "exemplo": true,
+   "texto_aprovado": "mostruário: texto de exemplo fictício, sem rosto",
+   "inicio": 51.45,
+   "duracao": 4.4
+  },
+  {
+   "efeito": "checklist-cascata",
+   "titulo": "Exemplo de itens",
+   "itens": [
+    "Item de exemplo 1",
+    "Item de exemplo 2",
+    "Item de exemplo 3",
+    "Item de exemplo 4"
+   ],
+   "intervalo": 0.75,
+   "exemplo": true,
+   "texto_aprovado": "mostruário: texto de exemplo fictício, sem rosto",
+   "inicio": 56.15,
+   "duracao": 5.2
+  },
+  {
+   "efeito": "destaque-de-lei",
+   "cabecalho": "EXEMPLO · lei nº 0.000 · art. 0",
+   "linhas": [
+    "Texto de exemplo do dispositivo,",
+    "com um trecho que será grifado",
+    "e uma continuação do texto",
+    "para mostrar o contraste."
+   ],
+   "destaque": "um trecho que será grifado",
+   "exemplo": true,
+   "texto_aprovado": "mostruário: texto de exemplo fictício, sem rosto",
+   "inicio": 61.65,
+   "duracao": 6.4
+  },
+  {
+   "efeito": "anel-percentual",
+   "valor": 65,
+   "rotulo": "EXEMPLO · proporção fictícia",
+   "exemplo": true,
+   "texto_aprovado": "mostruário: texto de exemplo fictício, sem rosto",
+   "inicio": 68.35,
+   "duracao": 4.0
+  },
+  {
+   "efeito": "fecho-frase-regua",
+   "texto": "Vale guardar esse vídeo",
+   "inicio": 72.65,
+   "duracao": 3.2
+  },
+  {
+   "efeito": "fecho-ficha-tema",
+   "partes": [
+    "Tribunal",
+    "Tema 0000"
+   ],
+   "exemplo": true,
+   "texto_aprovado": "mostruário: texto de exemplo fictício, sem rosto",
+   "inicio": 76.15,
+   "duracao": 3.2
+  },
+  {
+   "efeito": "fecho-tela-limpa",
+   "texto": "Fica de olho nisso",
+   "inicio": 79.65,
+   "duracao": 3.4
+  }
+ ]
+}

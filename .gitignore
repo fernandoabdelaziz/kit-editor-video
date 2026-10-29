@@ -1,0 +1,18 @@
+# gerado pelo install.sh (caminho da raiz desta máquina)
+raiz.txt
+__pycache__/
+*.pyc
+.venv*/
+node_modules/
+# vídeos, áudio, transcrições e modelos nunca entram no repositório
+*.mp4
+*.mov
+*.mkv
+*.wav
+*.m4a
+*.tflite
+*.rnnn
+*.npz
+brutos/
+trabalho/
+editados/

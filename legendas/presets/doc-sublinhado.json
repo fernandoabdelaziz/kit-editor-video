@@ -1,0 +1,6 @@
+{"nome": "doc-sublinhado", "origem": "ai-motion-library, versão documental (Douglas Januário, MIT): 'Grifar / highlight' (sublinhado crescendo da esquerda, 0,4 s, power2.out)", "licenca": "MIT",
+ "aparencia": "Sóbrio: frase estática; um sublinhado na cor de apoio cresce da esquerda sob a palavra que está sendo dita.",
+ "paleta_padrao": "verde-bege", "fonte": "Inter Bold", "tamanho": 62, "contorno": 1.5,
+ "sombras": [{"dx": 2, "dy": 3, "opacidade": 0.6, "blur": 3}],
+ "agrupamento": {"regra": "palavras", "max_palavras": 5, "max_seg": 2.8, "pausa_quebra": 0.45},
+ "destaque": {"tipo": "sublinhado", "cor": "@apoio", "pad": [0, 6], "altura": 7, "dist": 8, "dur_sublinhado": 0.4, "raio": 3, "so_durante_palavra": false}}

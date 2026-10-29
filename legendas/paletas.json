@@ -1,0 +1,13 @@
+{
+ "_leia": "Papéis: texto (legenda), destaque (palavra ativa sem caixa), caixa (fundo da palavra ativa), texto_caixa (texto sobre a caixa), fundo (cartão/pílula do grupo), contorno, apoio (secundário), futuro (palavras ainda não ditas, opcional).",
+ "verde-bege": {"nome": "Verde e bege (sóbria; padrão do kit)", "texto": "#E8DCC4", "destaque": "#C9B895", "caixa": "#1E3A2F", "texto_caixa": "#E8DCC4", "fundo": "#1E3A2F", "contorno": "#17201A", "apoio": "#C9B895", "futuro": "#B8AE98"},
+ "classico": {"nome": "Clássico (marinho e creme)", "texto": "#F3EBDD", "destaque": "#CDB27A", "caixa": "#1F2A44", "texto_caixa": "#F3EBDD", "fundo": "#1F2A44", "contorno": "#141B2D", "apoio": "#CDB27A", "futuro": "#BDB6AA"},
+ "moderno": {"nome": "Moderno (grafite e mostarda)", "texto": "#F2F2F2", "destaque": "#D9A441", "caixa": "#2B2D31", "texto_caixa": "#F2F2F2", "fundo": "#2B2D31", "contorno": "#1A1B1E", "apoio": "#D9A441", "futuro": "#B4B4B4"},
+ "dourado": {"nome": "Dourado e marinho (presets caixa-caminha e marca-texto-b)", "texto": "#FFFFFF", "destaque": "#C9A227", "caixa": "#C9A227", "texto_caixa": "#0F1E33", "fundo": "#0F1E33", "contorno": "#000000", "apoio": "#C9A227", "futuro": "#B4B4B4"},
+ "marinho": {"nome": "Marinho com contorno claro (preset caixa-marinho)", "texto": "#FFFFFF", "destaque": "#D9E2EC", "caixa": "#1F3A5F", "texto_caixa": "#FFFFFF", "fundo": "#1F3A5F", "contorno": "#000000", "apoio": "#D9E2EC", "futuro": "#B4B4B4"},
+ "preto-branco": {"nome": "Preto e branco", "texto": "#FFFFFF", "destaque": "#FFFFFF", "caixa": "#000000", "texto_caixa": "#FFFFFF", "fundo": "#000000", "contorno": "#000000", "apoio": "#CCCCCC", "futuro": "#B4B4B4"},
+ "amarelo-tiktok": {"nome": "Branco e amarelo — padrão do ffmpeg-skill (FFD200 / B4B4B4)", "texto": "#FFFFFF", "destaque": "#FFD200", "caixa": "#FFD200", "texto_caixa": "#0A0A0A", "fundo": "#000000", "contorno": "#000000", "apoio": "#FFD200", "futuro": "#B4B4B4"},
+ "laranja": {"nome": "Branco e laranja — video-alchemy (FF9F1C)", "texto": "#FFFFFF", "destaque": "#FF9F1C", "caixa": "#FF9F1C", "texto_caixa": "#0A0A0A", "fundo": "#000000", "contorno": "#000000", "apoio": "#FF9F1C", "futuro": "#B4B4B4"},
+ "azul-eletrico": {"nome": "Branco e azul elétrico — claude-video-skills (2563EB, cartão 0F121A)", "texto": "#FFFFFF", "destaque": "#2563EB", "caixa": "#2563EB", "texto_caixa": "#FFFFFF", "fundo": "#0F121A", "contorno": "#000000", "apoio": "#2563EB", "futuro": "#B4B4B4"},
+ "vidro-amarelo": {"nome": "Pílula escura e amarelo — claude-code-video-editing (fundo 080A0E, ativo FFD600)", "texto": "#F5F5F5", "destaque": "#FFD600", "caixa": "#FFD600", "texto_caixa": "#0A0A0A", "fundo": "#080A0E", "contorno": "#000000", "apoio": "#FFD600", "futuro": "#9E9E9E"}
+}

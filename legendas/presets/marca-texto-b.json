@@ -1,0 +1,6 @@
+{"nome": "marca-texto-b", "origem": "próprio do kit (mostruário de legendas, variação B)", "licenca": "própria",
+ "aparencia": "Marca-texto dourado que cresce da esquerda e acumula até a palavra falada; palavras já grifadas em marinho escuro.",
+ "paleta_padrao": "dourado", "fonte": "Inter SemiBold", "tamanho": 60, "contorno": 0,
+ "sombras": [{"dx": 3, "dy": 4, "opacidade": 0.6, "blur": 3}],
+ "agrupamento": {"regra": "palavras", "max_palavras": 4, "max_seg": 2.4, "pausa_quebra": 0.4},
+ "destaque": {"tipo": "marca-texto", "cor": "@caixa", "opacidade": 0.85, "texto": "@texto_caixa", "transicao": 0.1, "pad": [12, 6], "raio": 10, "fade_primeiro": true}}

@@ -1,0 +1,6 @@
+{"nome": "ffs-faixa", "origem": "ffmpeg-skill (kajisho5, MIT): caption.py --box --animate fade (BorderStyle 3, fundo da cor do contorno a 50%)", "licenca": "MIT",
+ "aparencia": "Frase branca sobre faixa retangular preta semitransparente, entrando em fade; sem destaque de palavra (legenda de TV).",
+ "paleta_padrao": "preto-branco", "fonte": "Inter SemiBold", "tamanho": 60, "contorno": 0,
+ "agrupamento": {"regra": "palavras", "max_palavras": 6, "max_seg": 3.2, "pausa_quebra": 0.5},
+ "fundo": {"cor": "@fundo", "opacidade": 0.5, "pad": [18, 10], "raio": 0},
+ "entrada": {"tipo": "fade", "dur": 0.2}}

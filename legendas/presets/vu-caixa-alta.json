@@ -1,0 +1,6 @@
+{"nome": "vu-caixa-alta", "origem": "video-use (browser-use, MIT): estilo 'bold-overlay' de render.py (2 palavras, MAIÚSCULAS, Helvetica Bold, contorno 2, MarginV 90/288)", "licenca": "MIT",
+ "aparencia": "Duas palavras por vez, em MAIÚSCULAS, branco com contorno preto, sem caixa nem destaque; ritmo rápido.",
+ "paleta_padrao": "preto-branco", "fonte": "Liberation Sans", "negrito": 1, "tamanho": 80, "contorno": 5,
+ "caixa_alta": true, "pontuacao": "tirar_tudo",
+ "posicao": {"y": 0.70, "y_paisagem": 0.70},
+ "agrupamento": {"regra": "palavras", "max_palavras": 2, "max_seg": 1.6, "pausa_quebra": 0.3, "min_dur": 0.35}}

@@ -1,0 +1,12 @@
+{
+ "formato": "reels",
+ "paleta": "verde-bege",
+ "edl": "trabalho/TEMA/edl_aprovada.json",
+ "efeitos": [
+  {"efeito": "lower-third", "texto": "Nome Sobrenome", "apoio": "Profissão",
+   "inicio": 0.5, "duracao": 3.4, "entrada": 0.5, "texto_aprovado": "nome e cargo de quem fala"},
+  {"efeito": "count-up", "texto": "19 de outubro", "sincronizar": true, "entrada": 0.45},
+  {"efeito": "typewriter-highlight", "texto": "o prazo é de trinta dias, mesmo em feriado",
+   "destaque": "trinta dias", "sincronizar": true, "entrada": 0.4}
+ ]
+}

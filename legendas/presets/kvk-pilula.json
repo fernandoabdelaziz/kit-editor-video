@@ -1,0 +1,10 @@
+{"nome": "kvk-pilula", "origem": "claude-code-video-editing (vyn-store/KVK, MIT): KaraokeSubtitle.tsx + MOTION_PHILOSOPHY (pílula escura 82% com borda branca 12%, palavra ativa em caixa amarela com texto escuro, passadas a 62%)", "licenca": "MIT",
+ "aparencia": "Frase numa pílula escura com borda fina; a palavra dita ganha uma caixa amarela com letra escura; as já ditas ficam apagadas.",
+ "paleta_padrao": "vidro-amarelo", "fonte": "Inter Bold", "tamanho": 52, "contorno": 0,
+ "posicao": {"y": 0.80, "y_paisagem": 0.90},
+ "agrupamento": {"regra": "palavras", "max_palavras": 5, "max_seg": 2.8, "pausa_quebra": 0.45},
+ "cores": {"texto": "@texto", "passado": "@futuro"},
+ "destaque": {"tipo": "caixa", "cor": "@caixa", "texto": "@texto_caixa", "transicao": 0, "pad": [10, 4], "raio": 10},
+ "fundo": {"cor": "@fundo", "opacidade": 0.82, "pad": [28, 16], "raio": 16, "borda": {"cor": "#FFFFFF", "opacidade": 0.12, "largura": 1}},
+ "entrada": {"tipo": "fade", "dur": 0.15},
+ "saida": {"tipo": "fade", "dur": 0.15}}

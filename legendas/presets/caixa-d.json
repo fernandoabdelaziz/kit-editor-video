@@ -1,0 +1,7 @@
+{"nome": "caixa-d", "origem": "próprio do kit (variação D)", "licenca": "própria",
+ "aparencia": "Caixa opaca de cantos arredondados atrás da palavra falada, deslizando 0,1 s de uma palavra para a outra; texto sem mudar de cor; grupos curtos com palavra-chave sozinha.",
+ "paleta_padrao": "verde-bege", "fonte": "Inter Bold", "tamanho": 64, "contorno": 1.5,
+ "sombras": [{"dx": 2, "dy": 3, "opacidade": 0.6, "blur": 3}],
+ "posicao": {"y": 0.781, "y_paisagem": 0.87},
+ "agrupamento": {"regra": "palavras", "max_palavras": 5, "max_seg": 2.6, "pausa_quebra": 0.4, "chave_sozinha": true},
+ "destaque": {"tipo": "caixa", "cor": "@caixa", "texto": "@texto_caixa", "transicao": 0.1, "pad": [12, 6], "raio": 10}}

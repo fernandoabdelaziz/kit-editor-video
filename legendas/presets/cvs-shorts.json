@@ -1,0 +1,11 @@
+{"nome": "cvs-shorts", "origem": "claude-video-skills (Tamil Iniyan, MIT): Captions.tsx, modo shorts 'cardless' (até 3 palavras, MAIÚSCULAS, Space Grotesk 800, sombra pesada, palavra viva na cor de destaque, entrada fade + sobe + desfoque que some)", "licenca": "MIT",
+ "aparencia": "Até 3 palavras em MAIÚSCULAS sem caixa, sombra pesada; a palavra que está sendo dita acende em azul; o grupo entra subindo e ganhando foco.",
+ "paleta_padrao": "azul-eletrico", "fonte": "Space Grotesk", "negrito": 1, "tamanho": 66, "contorno": 0, "cor_contorno": "#000000",
+ "sombras": [{"dx": 0, "dy": 4, "opacidade": 0.9, "blur": 10}, {"dx": 0, "dy": 2, "opacidade": 0.85, "blur": 4}, {"dx": 0, "dy": 0, "opacidade": 0.7, "blur": 2}],
+ "caixa_alta": true, "pontuacao": "tirar_final",
+ "posicao": {"y": 0.80, "y_paisagem": 0.86},
+ "agrupamento": {"regra": "palavras", "max_palavras": 3, "max_seg": 1.8, "pausa_quebra": 0.35},
+ "cores": {"texto": "@texto", "ativo": "@destaque"},
+ "destaque": {"tipo": "cor", "so_durante_palavra": true},
+ "entrada": {"tipo": "subir-desfocar", "dur": 0.18, "dy": 14, "blur": 6},
+ "saida": {"tipo": "fade", "dur": 0.2}}

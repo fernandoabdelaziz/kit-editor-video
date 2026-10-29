@@ -1,0 +1,8 @@
+{"nome": "alchemy-paginas", "origem": "video-alchemy (Bootoshi, MIT): remotion-template/src/Main.tsx (páginas de 1,4 s no estilo createTikTokStyleCaptions do Remotion, peso 800, sombra pesada, palavra ativa laranja FF9F1C)", "licenca": "MIT (a lógica de páginas é do @remotion/captions: só a ideia, sem código Remotion)",
+ "aparencia": "Blocos de ~1,4 s de fala (5 a 6 palavras) em branco com sombra pesada; a palavra mais recente fica laranja e continua acesa até a próxima.",
+ "paleta_padrao": "laranja", "fonte": "Inter ExtraBold", "tamanho": 60, "contorno": 0,
+ "sombras": [{"dx": 0, "dy": 4, "opacidade": 0.9, "blur": 10}, {"dx": 0, "dy": 2, "opacidade": 0.95, "blur": 3}],
+ "posicao": {"y": 0.79, "y_paisagem": 0.92},
+ "agrupamento": {"regra": "paginas", "janela_ms": 1400, "pausa_quebra": 0.7},
+ "cores": {"texto": "@texto", "ativo": "@destaque"},
+ "destaque": {"tipo": "cor"}}

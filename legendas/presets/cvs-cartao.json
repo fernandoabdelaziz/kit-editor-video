@@ -1,0 +1,11 @@
+{"nome": "cvs-cartao", "origem": "claude-video-skills (Tamil Iniyan, MIT): Captions.tsx, modo padrão/paisagem (frases de 3 a 5 palavras num cartão escuro 78%, raio 0,18 da fonte, palavra viva na cor de destaque)", "licenca": "MIT",
+ "aparencia": "Frase de 3 a 5 palavras num cartão escuro translúcido de cantos arredondados; a palavra dita acende na cor de destaque; entra em foco.",
+ "paleta_padrao": "azul-eletrico", "fonte": "Space Grotesk", "negrito": 1, "tamanho": 58, "contorno": 0,
+ "sombras": [{"dx": 0, "dy": 2, "opacidade": 0.55, "blur": 4}],
+ "posicao": {"y": 0.80, "y_paisagem": 0.86},
+ "agrupamento": {"regra": "palavras", "max_palavras": 5, "max_seg": 2.8, "pausa_quebra": 0.45},
+ "cores": {"texto": "@texto", "ativo": "@destaque"},
+ "destaque": {"tipo": "cor", "so_durante_palavra": true},
+ "fundo": {"cor": "@fundo", "opacidade": 0.78, "pad": [34, 17], "raio": 10},
+ "entrada": {"tipo": "subir-desfocar", "dur": 0.18, "dy": 10, "blur": 4},
+ "saida": {"tipo": "fade", "dur": 0.2}}
