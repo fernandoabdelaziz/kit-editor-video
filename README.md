@@ -56,7 +56,7 @@ O navegador usado pelo motion é o `google-chrome` ou o `chromium` do sistema. P
 
 ```bash
 mkdir -p ~/videos/ferramentas && cd ~/videos/ferramentas
-git clone <URL-deste-repositório> kit-editor
+git clone https://github.com/fernandoabdelaziz/kit-editor-video.git kit-editor
 cd kit-editor
 ./install.sh --teste
 ```
